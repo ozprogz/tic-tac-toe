@@ -1,0 +1,123 @@
+
+@import url("http://fonts.googleapis.com/css?family=Lobster");
+html, body{
+    margin: 0;
+    padding: 0  ;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+.tic-tac-toe{
+    font-family:  "Lobster", sans-serif;
+    font-size: 8em;
+    margin:0;
+    padding: 0;
+}
+.mark{
+    font-family:  "Lobster", sans-serif;
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+}
+#field{
+    display: grid;
+    grid-template-columns: repeat(3, 9em);
+    grid-template-rows: repeat(3, 9em);
+}
+.field-button, .result, .highlighted{
+    padding: auto;
+    font-size: 3em;
+}
+.highlighted{
+    font-weight: 500;
+    animation-name: zoom-in-zoom-out;
+    animation-duration: 3s;
+    font-size: 3em;
+    
+}
+@keyframes zoom-in-zoom-out {
+    0% {
+        background-color: #FFEBAD;
+      transform: scale(1, 1);
+    }
+    50% {
+        background-color: #FFEBAD;
+      transform: scale(1.05, 1.05);
+    }
+    100% {
+        background-color: whitesmoke;
+
+      transform: scale(1, 1);
+    }
+  }
+header{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 0.1em solid black;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #A5F1E9;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:1px;
+    flex-direction: column;
+    flex-grow: 2;
+    width: 100%;
+    background-color: #7FE9DE;
+}
+.result{
+    font-weight: 900;
+    font-size: 3em;
+}
+footer{
+    flex-grow: 0.5;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFEBAD;
+    border-top: 0.1em solid black;
+    font-size: 1em;
+}
+#x, #o, #restart{
+    padding: 1em 4em;
+    margin: 0 2em;
+    border-radius: 0.3em;
+    font-size: 1em;
+    font-weight: 600;
+}
+button{
+    background-color: whitesmoke;
+    border-radius: 0.05em;
+    margin:0;
+}
+#x:hover, #restart:hover{
+    background-color: #FFF6BF;
+}   
+#o:hover{
+    background-color: #FFF6BF;
+}
+
+.field-button:hover{
+    background-color: #FFF6BF;
+}   
+div{
+    font-family:  "Lobster", sans-serif;
+    padding: 0;
+} 
+
+#restart{
+    padding: 0.5em 3em;
+}
