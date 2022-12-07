@@ -175,7 +175,7 @@ const Player = (sign) => {
     const getSign = () => playerSign;
     const setTurn = (state) => (turn = state);
     const getTurn = () => turn;
-    return { getSign, getWins, setSign, setTurn, getTurn };
+    return { getSign, setSign, setTurn, getTurn };
 };
 
 const gameFlowController = (() => {
